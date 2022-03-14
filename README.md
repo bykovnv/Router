@@ -24,9 +24,13 @@ return [
     [
         "view" => "main"
     ],
-    "show" =>  
+    "users" =>  
     [
-        "view" => "show",
+        "view" => "users",
+    ],
+    "user" =>  
+    [
+        "view" => "user",
     ],
 ];
 ```
@@ -42,8 +46,8 @@ $route = new Router();
 
 ```php
     $route->Add('', 'view/home.php');
-    $route->Add('posts', 'view/posts.php');
-    $route->Add('post/{id:\d+}', 'view/post.php');
+    $route->Add('posts', 'view/users.php');
+    $route->Add('post/{id:\d+}', 'view/user.php');
     $route->run();
 ```
 
